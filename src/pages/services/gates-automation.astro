@@ -1,0 +1,136 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does an automated gate cost in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In 2026, a custom pedestrian gate across Cardinia typically runs about $400–$1,200 supplied and installed, a manual driveway gate roughly $1,500–$4,000 depending on size and material, and full automation adds about $1,800–$4,500 for the motor, controls and wiring. A worked example: a 4-metre sliding Colorbond driveway gate at $3,200 with a $2,600 slider motor and remotes comes to around $5,800." }
+    },
+    {
+      "@type": "Question",
+      "name": "Sliding or swing gate for my driveway?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sliding gates suit narrow frontages and sloping driveways common around Cardinia Lakes and Officer because they do not swing into the drive. Swing gates suit wider, flatter entrances and give a more traditional look. We assess your slope, width and the way you drive in before recommending one." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you automate an existing gate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Often, yes — if the existing gate is sound and properly hung we can fit a slider or swing-arm motor, safety sensors, remotes and a keypad or intercom to it. If the gate is sagging or under-built we'll tell you, because automation only works reliably on a gate that is hung true." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you match gates to my fence?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We build gates to match your boundary — Colorbond to a Colorbond fence, timber to a timber fence, or aluminium and tubular for a feature entrance. Matching the gate to the run is what makes the whole frontage look finished rather than patched together." }
+    }
+  ]
+};
+---
+<Layout
+  title="Gates & Automation Pakenham | Driveway & Pedestrian Gates | Pakenham Fencing"
+  description="Custom gates & automation in Pakenham & Cardinia — sliding & swing driveway gates, pedestrian gates, motors & remotes to match your fence. (03) 9003 0108."
+  canonical="https://pakenhamfencingco.com.au/services/gates-automation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero hero-suburb">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Gates &amp; Automation</span>
+      <h1>Gates &amp; automation in <span class="accent">Pakenham</span>.</h1>
+      <p class="hero-sub">
+        Custom pedestrian and driveway gates &mdash; sliding and swing &mdash; built
+        to match your fence and fitted with reliable automation. Tidy, secure
+        entrances for homes across Pakenham and the Cardinia growth corridor.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The gate finishes the fence.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          A boundary is only as good as the way you get in and out of it. We build
+          custom pedestrian and driveway gates to match the fence &mdash; whether we
+          installed it or not &mdash; so the whole frontage reads as one job.
+          Colorbond gates to a Colorbond run, timber to timber, or a tubular and
+          aluminium feature gate where you want the entrance to stand out. Across the
+          newer estates of Cardinia Lakes, Officer and Heritage Springs a clean
+          automated gate is fast becoming the expected finish.
+        </p>
+        <p>
+          Sliding or swing depends on your block. Sliding gates suit narrow frontages
+          and the sloping driveways that are common across the corridor, because they
+          track sideways instead of swinging into the drive. Swing gates suit wider,
+          flatter entrances and give a more traditional look. We weld and hang every
+          gate true, because a gate that is not hung properly will sag, bind and
+          wreck any motor fitted to it.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Automation that keeps working.</h3>
+        <p>
+          We fit slider and swing-arm motors with safety sensors, remotes, keypads
+          and intercom options to suit how you live. On rural and acreage entrances
+          around Pakenham Upper and Gembrook, where the wind and the distances are
+          bigger, we spec heavier-duty motors and braced gate frames so the gate
+          keeps cycling reliably for years. All electrical work is done to AS/NZS
+          3000.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What it costs.</h3>
+        <p>
+          As a 2026 guide: a custom pedestrian gate runs about $400&ndash;$1,200, a
+          manual driveway gate roughly $1,500&ndash;$4,000, and automation adds about
+          $1,800&ndash;$4,500 for the motor, controls and wiring. A worked example: a
+          4-metre sliding Colorbond driveway gate at $3,200 with a $2,600 slider motor
+          and remotes is around $5,800, supplied and installed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Related fencing &amp; areas.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          Building the fence at the same time? Pair your gate with
+          <a href="/services/colorbond-fencing/">Colorbond fencing</a> or
+          <a href="/services/timber-paling-fencing/">timber paling fencing</a> for a
+          matched frontage. We fit gates and automation across
+          <a href="/officer/">Officer</a> and
+          <a href="/cardinia-lakes/">Cardinia Lakes</a> &mdash; and the wider
+          <a href="/cardinia-shire/">Cardinia Shire</a> area.
+        </p>
+      </div>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get your gate &amp; automation quote.</h2>
+        <p>Tell us your driveway width and the look you want and we&rsquo;ll send a clear written price.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

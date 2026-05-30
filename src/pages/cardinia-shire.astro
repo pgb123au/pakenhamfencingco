@@ -1,0 +1,131 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What areas of Cardinia Shire do you fence?",
+      "acceptedAnswer": { "@type": "Answer", "text": "We cover the whole growth corridor and the rural hills behind it — Pakenham, Cardinia Lakes, Lakeside, Heritage Springs, Officer and Beaconsfield, plus Nar Nar Goon, Pakenham Upper, Beaconsfield Upper, Gembrook and Maryknoll." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a Cardinia Shire permit for a new fence?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most dividing fences up to 2.1 metres do not need a building permit, but taller or retaining fences bring in VBA registration and the NCC boundary rules, and Cardinia Shire planning or building permits can apply on height and corner-splay. Pool barriers must meet AS 1926.1 and be registered with the shire. We confirm what applies to your block before quoting." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is there so much fencing demand in Cardinia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cardinia Shire is one of Victoria's fastest-growing areas, adding roughly 255 new dwellings a year, with Pakenham East alone planned for more than 7,000 homes. New homes need new boundaries and pool barriers, and the early-2000s estates are now ageing and due for replacement." }
+    },
+    {
+      "@type": "Question",
+      "name": "Who pays for a shared boundary fence in Cardinia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Under the Fences Act 1968 (VIC), the cost of a sufficient dividing fence is generally shared between adjoining owners once the right fencing notices are served. We can supply the quote you hand to your neighbour for shared-fence work anywhere in the shire." }
+    }
+  ]
+};
+---
+<Layout
+  title="Fencing Cardinia Shire | Service Areas & Local Guide | Pakenham Fencing"
+  description="Fencing across Cardinia Shire — Pakenham, Cardinia Lakes, Officer, Beaconsfield & the rural hills. Colorbond, timber, pool, rural & gates. (03) 9003 0108."
+  canonical="https://pakenhamfencingco.com.au/cardinia-shire/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero hero-suburb">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Cardinia Shire, Victoria</span>
+      <h1>Fencing across <span class="accent">Cardinia Shire</span>.</h1>
+      <p class="hero-sub">
+        Your local fencer for the whole Cardinia growth corridor and the rural hills
+        behind it &mdash; Colorbond, timber, pool and rural fencing plus gates and
+        automation, built for how this region really behaves.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>One of Victoria&rsquo;s fastest-growing regions.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          Cardinia Shire is booming. The shire is adding roughly 255 new dwellings a
+          year, and Pakenham East alone is planned for more than 7,000 new homes.
+          Every one of those blocks eventually needs a boundary fence, and many need
+          a compliant pool barrier and a tidy automated gate as well. At the same
+          time, the early-2000s estates that built out the corridor &mdash; Cardinia
+          Lakes, Lakeside, Heritage Springs &mdash; are now reaching the age where
+          their original fences are sagging and ready to replace. There is more
+          fencing work in Cardinia than almost anywhere in the state, and we are a
+          local team built to do it.
+        </p>
+        <p>
+          We build for two very different sides of the shire. Down in the corridor it
+          is suburban boundaries on clay-reactive soils under high-UV summers &mdash;
+          where concreted posts at the right depth and low-maintenance Colorbond earn
+          their keep. Up in the hills around Pakenham Upper, Gembrook and Maryknoll it
+          is acreage and lifestyle blocks where exposed paddock wind dictates closer
+          post spacings, deeper footings and braced strainer assemblies. Same trade,
+          two completely different briefs, and we know both.
+        </p>
+        <p>
+          Across all of it we work to the codes that matter &mdash; the Fences Act
+          1968 for shared boundary fences and cost-sharing, AS 1926.1 and the
+          Victorian pool-barrier regulations plus Cardinia Shire registration for pool
+          and spa barriers, VBA registration for fencing over 2.1 metres or retaining
+          work, Cardinia Shire planning or building permits where height or
+          corner-splay applies, and Dial Before You Dig before any post holes.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Our fencing services.</h3>
+        <p>
+          Choose from
+          <a href="/services/colorbond-fencing/">Colorbond fencing</a>,
+          <a href="/services/timber-paling-fencing/">timber paling fencing</a>,
+          <a href="/services/pool-safety-fencing/">pool safety fencing</a>,
+          <a href="/services/rural-acreage-fencing/">rural &amp; acreage fencing</a>,
+          and <a href="/services/gates-automation/">gates &amp; automation</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Areas we cover across Cardinia.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <span class="area-pill area-pill-static">Nar Nar Goon</span>
+        <span class="area-pill area-pill-static">Pakenham Upper</span>
+        <span class="area-pill area-pill-static">Beaconsfield Upper</span>
+        <span class="area-pill area-pill-static">Gembrook</span>
+        <span class="area-pill area-pill-static">Maryknoll</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Cardinia Shire fencing quote.</h2>
+        <p>Local fencers across the whole shire.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,137 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does rural fencing cost around Cardinia?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Rural fencing is usually priced per lineal metre and varies widely with the type. As a 2026 guide across the Cardinia hills, plain and hinged-joint wire stock fencing runs about $18–$40 per lineal metre supplied and installed, while timber post-and-rail is higher at roughly $70–$130 per lineal metre. A worked example: a 200-metre stock-fence boundary at $28 per metre is around $5,600, before allowing for rock, gates or strainer assemblies." }
+    },
+    {
+      "@type": "Question",
+      "name": "What fencing suits acreage and lifestyle blocks here?",
+      "acceptedAnswer": { "@type": "Answer", "text": "It depends on the job. Post-and-rail looks the part on a lifestyle frontage around Pakenham Upper or Gembrook, hinged-joint and plain wire keeps stock contained on grazing land, and a combination is common — a presentable rail frontage with practical wire on the back paddocks." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you stop rural fences blowing over?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Open paddock wind loading is the big factor on rural boundaries out here. We answer it with closer post spacings, deeper footings, properly braced strainer and corner assemblies, and correctly tensioned wire. Get the strainers and bracing right and the whole run stays tight for years." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do rural fences in Cardinia Shire need permits?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Standard stock and boundary fencing generally does not need a building permit, but any fence over 2.1 metres or one that retains soil brings in VBA registration and NCC boundary rules, and Cardinia Shire planning or building permits can apply. Shared boundaries fall under the Fences Act 1968, and we Dial Before You Dig before excavating post holes." }
+    }
+  ]
+};
+---
+<Layout
+  title="Rural & Acreage Fencing Pakenham | Post-and-Rail & Stock | Pakenham Fencing"
+  description="Rural & acreage fencing across Cardinia — post-and-rail, wire & stock fencing engineered for paddock wind & lifestyle blocks. Free quotes — (03) 9003 0108."
+  canonical="https://pakenhamfencingco.com.au/services/rural-acreage-fencing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero hero-suburb">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Rural &amp; Acreage Fencing</span>
+      <h1>Rural &amp; acreage fencing across <span class="accent">Cardinia</span>.</h1>
+      <p class="hero-sub">
+        Post-and-rail, wire and stock fencing engineered for Cardinia&rsquo;s rural
+        and lifestyle properties &mdash; built to stand up to exposed paddock wind on
+        blocks from Pakenham Upper to Gembrook.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Fencing for the rural side of Cardinia.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          Cardinia is not all new estates. Climb up out of the corridor and you are
+          into the lifestyle and grazing country around Pakenham Upper, Beaconsfield
+          Upper, Gembrook and Maryknoll &mdash; acreage blocks, hobby farms and rural
+          frontages that need fencing built to a completely different brief from a
+          suburban boundary. We do that work: post-and-rail for presentation,
+          hinged-joint and plain wire for stock, and the gates and strainer
+          assemblies that tie a long run together.
+        </p>
+        <p>
+          Out here the deciding factor is exposed paddock wind loading. A fence that
+          would be fine in a sheltered Cardinia Lakes backyard will work itself loose
+          on an open ridge if it is not built for the wind. We use closer post
+          spacings, deeper footings, properly braced corner and strainer assemblies
+          and correctly tensioned wire so the whole line stays tight. Our
+          clay-reactive soils get the same respect they do in town &mdash; the right
+          footing depth so posts do not heave.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Types and what it costs.</h3>
+        <p>
+          Most rural fencing is priced per lineal metre. As a 2026 guide, wire stock
+          fencing runs about $18&ndash;$40 per lineal metre and timber post-and-rail
+          roughly $70&ndash;$130 per lineal metre, supplied and installed. A worked
+          example: a 200-metre stock boundary at $28 per metre is around $5,600,
+          before rock, gates or extra strainer assemblies. We often combine a
+          presentable rail frontage with practical wire on the back paddocks.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Standards and permits.</h3>
+        <p>
+          Standard stock and boundary fencing generally needs no building permit, but
+          any fence over 2.1 metres or one that retains soil brings in VBA
+          registration and NCC boundary rules, with Cardinia Shire planning or
+          building permits where they apply. Shared boundaries fall under the Fences
+          Act 1968, and we Dial Before You Dig before excavating. We confirm the lot
+          before quoting.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Related fencing &amp; areas.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          Need a presentable house-yard inside the acreage? Add
+          <a href="/services/colorbond-fencing/">Colorbond fencing</a> or a
+          <a href="/services/gates-automation/">driveway gate with automation</a>. We
+          fence rural and lifestyle blocks right across the shire &mdash; from
+          <a href="/beaconsfield/">Beaconsfield</a> up into the hills. See the whole
+          <a href="/cardinia-shire/">Cardinia Shire</a> service area.
+        </p>
+      </div>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get your rural fencing quote.</h2>
+        <p>Tell us the boundary length and the type of stock or look you&rsquo;re after for a clear written price.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

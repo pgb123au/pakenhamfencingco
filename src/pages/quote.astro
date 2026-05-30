@@ -1,0 +1,91 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Get a Free Fencing Quote | Pakenham Fencing | (03) 9003 0108"
+  description="Get a free fencing quote in Pakenham — Colorbond, timber, pool, rural fencing & gates. Fast response, fixed-price quotes. Call (03) 9003 0108 or fill the form."
+  canonical="https://pakenhamfencingco.com.au/quote/">
+  <section class="hero hero-suburb">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free quote &middot; Fast response</span>
+      <h1>Get your free <span class="accent">fencing quote</span>.</h1>
+      <p class="hero-sub">
+        Tell us about your boundary, pool or gate and we&rsquo;ll get back to you
+        with a clear, written, no-obligation price. We quote across Pakenham,
+        Cardinia Lakes, Lakeside, Heritage Springs, Officer, Beaconsfield and the
+        wider shire.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div style="max-width: 40rem; margin: 0 auto;">
+        <p style="margin-bottom: 1.5rem;">
+          The more detail you give us &mdash; rough boundary length, the type of
+          fence (Colorbond, timber, pool, rural or a gate), and your suburb &mdash;
+          the more accurate our first response will be. Prefer to talk it through?
+          Call us on <a href="tel:+61390030108">(03) 9003 0108</a>.
+        </p>
+        <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks/">
+          <input type="hidden" name="form-name" value="quote" />
+          <p class="hidden" style="display:none;">
+            <label>Don&rsquo;t fill this out: <input name="bot-field" /></label>
+          </p>
+          <div style="margin-bottom: 1rem;">
+            <label for="name" style="display:block; margin-bottom: 0.35rem; font-weight: 600;">Name</label>
+            <input type="text" id="name" name="name" required style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:6px;" />
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label for="email" style="display:block; margin-bottom: 0.35rem; font-weight: 600;">Email</label>
+            <input type="email" id="email" name="email" required style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:6px;" />
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label for="phone" style="display:block; margin-bottom: 0.35rem; font-weight: 600;">Phone</label>
+            <input type="tel" id="phone" name="phone" style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:6px;" />
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label for="suburb" style="display:block; margin-bottom: 0.35rem; font-weight: 600;">Suburb</label>
+            <input type="text" id="suburb" name="suburb" placeholder="e.g. Cardinia Lakes, Officer, Beaconsfield" style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:6px;" />
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label for="service" style="display:block; margin-bottom: 0.35rem; font-weight: 600;">What do you need?</label>
+            <select id="service" name="service" style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:6px;">
+              <option value="Colorbond Fencing">Colorbond Fencing</option>
+              <option value="Timber Paling Fencing">Timber Paling Fencing</option>
+              <option value="Pool Safety Fencing">Pool Safety Fencing</option>
+              <option value="Rural & Acreage Fencing">Rural &amp; Acreage Fencing</option>
+              <option value="Gates & Automation">Gates &amp; Automation</option>
+              <option value="Not sure / other">Not sure / other</option>
+            </select>
+          </div>
+          <div style="margin-bottom: 1rem;">
+            <label for="message" style="display:block; margin-bottom: 0.35rem; font-weight: 600;">Tell us about the job</label>
+            <textarea id="message" name="message" rows="5" placeholder="Rough boundary length, height, what you'd like, and any access notes" style="width:100%; padding:0.6rem; border:1px solid #ccc; border-radius:6px;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send my quote request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Not sure which fence you need?</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          Browse the options first &mdash;
+          <a href="/services/colorbond-fencing/">Colorbond fencing</a>,
+          <a href="/services/timber-paling-fencing/">timber paling fencing</a>,
+          <a href="/services/pool-safety-fencing/">pool safety fencing</a> to
+          AS 1926.1,
+          <a href="/services/rural-acreage-fencing/">rural &amp; acreage fencing</a>
+          or <a href="/services/gates-automation/">gates &amp; automation</a> &mdash;
+          or see fencing in your area such as <a href="/officer/">Officer</a>,
+          <a href="/cardinia-lakes/">Cardinia Lakes</a> and across
+          <a href="/cardinia-shire/">Cardinia Shire</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

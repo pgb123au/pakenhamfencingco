@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you install fencing in Lakeside?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — Lakeside is a regular area for us. We install Colorbond, timber and pool fencing plus gates and automation across the estate, and we're used to matching the established streetscape." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does fencing cost in Lakeside in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a guide, timber paling runs about $90–$140 per lineal metre and Colorbond about $110–$170 per lineal metre supplied and installed. A 30-metre timber rear boundary at $110 per metre comes to around $3,300, before old-fence removal or capping upgrades." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you replace my old Lakeside fence and match the neighbours?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Lakeside's early-2000s timber boundaries are now ageing, and we replace tired runs while matching the neighbour's height, paling profile and capping so the street stays consistent. Shared dividing fences fall under the Fences Act 1968." }
+    },
+    {
+      "@type": "Question",
+      "name": "What lasts best in Lakeside conditions?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Low-maintenance Colorbond handles our high-UV summers and clay-reactive soils with almost no upkeep, while a properly capped and treated timber fence still gives 10 to 15 years and a warmer look." }
+    }
+  ]
+};
+---
+<Layout
+  title="Fencing Lakeside Pakenham | Colorbond & Timber Fences | Pakenham Fencing"
+  description="Fencing in Lakeside, Pakenham — Colorbond, timber, pool fencing & gates, matched to the estate & built to last. Free quotes — (03) 9003 0108."
+  canonical="https://pakenhamfencingco.com.au/lakeside/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero hero-suburb">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Lakeside, Pakenham VIC 3810</span>
+      <h1>Fencing in <span class="accent">Lakeside</span>.</h1>
+      <p class="hero-sub">
+        Colorbond, timber and pool fencing plus gates and automation for the
+        Lakeside estate &mdash; matched to the street and built for our soils and
+        summers.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Fencing the established Lakeside streets.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          Lakeside is one of the maturing estates of the Pakenham corridor &mdash;
+          built out in the early 2000s, and now at the point where a lot of the
+          original timber boundaries are greying, leaning and ready to be replaced.
+          We do a steady stream of replacement work here, and the priority is always
+          the same: rebuild the fence properly while keeping the street looking
+          consistent.
+        </p>
+        <p>
+          We build for Lakeside&rsquo;s ground. The clay-reactive soils under the
+          estate move with every wet and dry cycle, so posts go in at the right depth
+          in concrete to stop the slow lean. Our high-UV summers fade and warp
+          under-spec timber, so we cap and treat properly and steer plenty of
+          homeowners toward low-maintenance Colorbond. When we replace one run in a
+          row of older fences, we match the neighbour&rsquo;s height and paling
+          profile so the streetscape stays tidy rather than patchy.
+        </p>
+        <p>
+          Everything is built to the codes that matter &mdash; the Fences Act 1968
+          for shared boundary fences and cost-sharing, AS 1926.1 for pool barriers,
+          VBA registration for fencing over 2.1 metres or anything that retains, and
+          Cardinia Shire permits where they apply &mdash; so the fence stands
+          straight and passes inspection.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Fencing services in Lakeside.</h3>
+        <p>
+          Choose from
+          <a href="/services/colorbond-fencing/">Colorbond fencing</a>,
+          <a href="/services/timber-paling-fencing/">timber paling fencing</a>,
+          <a href="/services/pool-safety-fencing/">pool safety fencing</a> to
+          AS 1926.1, or matched
+          <a href="/services/gates-automation/">gates &amp; automation</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other areas we fence.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+        <span class="area-pill area-pill-static">Nar Nar Goon</span>
+        <span class="area-pill area-pill-static">Pakenham Upper</span>
+        <span class="area-pill area-pill-static">Beaconsfield Upper</span>
+        <span class="area-pill area-pill-static">Gembrook</span>
+        <span class="area-pill area-pill-static">Maryknoll</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Lakeside fencing quote.</h2>
+        <p>Local fencers for the Lakeside estate.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

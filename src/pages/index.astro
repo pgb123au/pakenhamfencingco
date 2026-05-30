@@ -1,0 +1,235 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does fencing cost in Pakenham in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a rough 2026 guide across Cardinia: treated-pine paling fencing runs about $90–$140 per lineal metre supplied and installed, Colorbond sits around $110–$170 per lineal metre, and glass pool fencing is roughly $300–$550 per lineal metre. A typical 30-metre Colorbond rear boundary at $135 per metre works out to about $4,050, before any allowance for rock, removal of an old fence, or stepped panels on a sloping Cardinia Lakes block." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a permit to build a fence in Cardinia Shire?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most standard dividing fences up to 2.1 metres do not need a building permit, but fences taller than 2.1 metres, fences that also retain soil, and pool barriers are regulated. Tall and retaining fencing brings in VBA registration and the NCC rules for building near boundaries, and Cardinia Shire planning or building permits can apply on height and corner-splay. We confirm what applies to your block before we quote." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my new pool fence have to meet AS 1926.1?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pool and spa barriers in Victoria must comply with AS 1926.1 and the Victorian pool-barrier regulations, including the four-sided isolation rule, the non-climbable zone, and self-closing, self-latching gates. We build glass and aluminium pool fencing to AS 1926.1 and Cardinia Shire barrier registration so it passes inspection the first time." }
+    },
+    {
+      "@type": "Question",
+      "name": "Who pays for a shared boundary fence?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Under the Fences Act 1968 (VIC) the cost of a sufficient dividing fence is generally shared between adjoining owners, after the correct fencing notices are served. A lot of our Cardinia Lakes and Lakeside replacement work is shared-fence work, and we can supply the quote you need to hand to your neighbour." }
+    },
+    {
+      "@type": "Question",
+      "name": "What fencing lasts best in the Cardinia growth corridor?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Colorbond steel handles our high-UV summers and clay-reactive soils better than most options and needs almost no maintenance, which is why it is the most popular choice across newer estates like Cardinia Lakes and Officer. Hardwood timber looks superb but moves more in the heat, and rural boundaries facing open paddock wind do best with closer post spacings and braced strainer assemblies." }
+    }
+  ]
+};
+---
+<Layout
+  title="Fencing Pakenham | Colorbond, Timber & Pool Fencing | Pakenham Fencing"
+  description="Fencing in Pakenham & the Cardinia growth corridor — Colorbond, timber, pool & rural fencing plus gates & automation. Built to AS 1926.1 & VBA standards. Free quotes."
+  canonical="https://pakenhamfencingco.com.au/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Colorbond &middot; Timber &middot; Pool &middot; Rural &middot; Gates</span>
+      <h1>Pakenham&rsquo;s local <span class="accent">fencing</span> contractors.</h1>
+      <p class="hero-sub">
+        Colorbond, timber, pool and rural fencing &mdash; plus custom gates and
+        automation &mdash; across Pakenham, Cardinia Lakes, Lakeside, Heritage
+        Springs, Officer and Beaconsfield. Straight lines, honest pricing, and
+        fences engineered for our clay soils and exposed paddock wind.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>AS 1926.1</strong>Compliant pool barriers</div>
+        <div><strong>Fences Act</strong>Shared-fence quotes</div>
+        <div><strong>VBA</strong>Tall &amp; retaining fencing</div>
+        <div><strong>Cardinia</strong>Local growth-corridor team</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we build</span>
+      <h2>Five fencing services for Cardinia.</h2>
+      <p class="section-lead">
+        From a Colorbond rear boundary on a new Officer block through to a
+        compliant glass pool barrier and an automated driveway gate. We do the
+        boundary, the pool fence, and the rural runs.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/colorbond-fencing/">
+          <div class="svc-icon" aria-hidden="true">&#9608;</div>
+          <h3>Colorbond fencing</h3>
+          <p>Steel Colorbond boundary fencing in the full colour range &mdash; durable, low-maintenance, the corridor standard. ~$110&ndash;$170/m installed.</p>
+          <span class="svc-link">See Colorbond fencing &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/timber-paling-fencing/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Timber paling fencing</h3>
+          <p>Treated-pine and hardwood paling fences, capped and lapped, built to last in Cardinia conditions. ~$90&ndash;$140/m installed.</p>
+          <span class="svc-link">See timber fencing &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/pool-safety-fencing/">
+          <div class="svc-icon" aria-hidden="true">&#9617;</div>
+          <h3>Pool safety fencing</h3>
+          <p>Glass and aluminium pool barriers fully compliant with AS 1926.1 and the Victorian pool-barrier regulations. From ~$130&ndash;$550/m.</p>
+          <span class="svc-link">See pool fencing &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/rural-acreage-fencing/">
+          <div class="svc-icon" aria-hidden="true">&#9776;</div>
+          <h3>Rural &amp; acreage fencing</h3>
+          <p>Post-and-rail, wire and stock fencing engineered for Cardinia&rsquo;s semi-rural and acreage blocks. From ~$18/m.</p>
+          <span class="svc-link">See rural fencing &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/gates-automation/">
+          <div class="svc-icon" aria-hidden="true">&#9636;</div>
+          <h3>Gates &amp; automation</h3>
+          <p>Custom pedestrian and driveway gates &mdash; sliding and swing &mdash; with automation, motors and remotes to match your fence.</p>
+          <span class="svc-link">See gates &amp; automation &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Cardinia specialist</span>
+      <h2>Fencing built for how Pakenham actually behaves.</h2>
+      <div style="max-width: 60rem;">
+        <p class="lead">
+          Pakenham sits at the front of one of Victoria&rsquo;s fastest-growing
+          corridors. Cardinia Shire is adding roughly 255 new dwellings a year, and
+          Pakenham East alone is planned for more than 7,000 new homes. Every one of
+          those blocks needs a boundary, a pool barrier or a gate &mdash; and the
+          early-2000s estates around Lakeside and Heritage Springs are now hitting
+          the age where their original fences are sagging, greying and ready for
+          replacement.
+        </p>
+        <p>
+          We build for the ground we actually work on. Cardinia&rsquo;s clay-reactive
+          soils heave and shrink through the seasons, so our posts are set with the
+          right footing depth and concrete to stop the lean that ruins a cheap fence.
+          Our high-UV summers fade and warp under-spec timber, which is why we cap
+          and treat hardwood and pine properly and steer most estate clients toward
+          low-maintenance Colorbond. On rural and acreage boundaries the exposed
+          paddock wind dictates closer post spacings and heavier, braced rails.
+        </p>
+        <p>
+          Whatever the job, we work to the codes that matter: the Fences Act 1968
+          for shared boundary fences and cost-sharing, AS 1926.1 and the Victorian
+          pool-barrier regulations for pool and spa barriers, VBA registration for
+          fencing over 2.1 metres or anything that retains, Cardinia Shire planning
+          or building permits where height or corner-splay applies, and Dial Before
+          You Dig before any post holes go in.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we fence.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        We are out building fences across the growth corridor and the rural hills
+        behind it every week. Start with your suburb:
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+        <span class="area-pill area-pill-static">Nar Nar Goon</span>
+        <span class="area-pill area-pill-static">Pakenham Upper</span>
+        <span class="area-pill area-pill-static">Beaconsfield Upper</span>
+        <span class="area-pill area-pill-static">Gembrook</span>
+        <span class="area-pill area-pill-static">Maryknoll</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Common questions</span>
+      <h2>Pakenham fencing FAQs.</h2>
+      <div style="max-width: 60rem;">
+        <h3>How much does fencing cost in Pakenham in 2026?</h3>
+        <p>
+          As a rough guide across Cardinia, treated-pine paling fencing runs about
+          $90&ndash;$140 per lineal metre installed, Colorbond around $110&ndash;$170
+          per lineal metre, and glass pool fencing roughly $300&ndash;$550 per lineal
+          metre. A typical 30-metre Colorbond rear boundary at $135 per metre works
+          out to about $4,050, before old-fence removal, rock or stepped panels.
+        </p>
+        <h3 style="margin-top: 2rem;">Do I need a permit to build a fence in Cardinia Shire?</h3>
+        <p>
+          Most standard dividing fences up to 2.1 metres do not need a building
+          permit, but taller fences, fences that retain soil, and pool barriers are
+          regulated &mdash; bringing in VBA registration, NCC boundary rules and
+          Cardinia Shire permits on height and corner-splay. We confirm what applies
+          before we quote.
+        </p>
+        <h3 style="margin-top: 2rem;">Does my new pool fence have to meet AS 1926.1?</h3>
+        <p>
+          Yes. Pool and spa barriers in Victoria must comply with AS 1926.1 and the
+          Victorian pool-barrier regulations &mdash; the four-sided isolation rule,
+          the non-climbable zone, and self-closing, self-latching gates &mdash; plus
+          Cardinia Shire barrier registration. We build to that standard so it passes
+          inspection.
+        </p>
+        <h3 style="margin-top: 2rem;">Who pays for a shared boundary fence?</h3>
+        <p>
+          Under the Fences Act 1968 (VIC) the cost of a sufficient dividing fence is
+          generally shared between adjoining owners once the correct fencing notices
+          are served. Much of our Cardinia Lakes and Lakeside replacement work is
+          shared-fence work, and we can supply the quote you hand to your neighbour.
+        </p>
+        <h3 style="margin-top: 2rem;">What fencing lasts best in the corridor?</h3>
+        <p>
+          Low-maintenance Colorbond copes best with our high-UV summers and
+          clay-reactive soils across the estates, while rural boundaries facing
+          exposed paddock wind need heavier, well-braced construction. We match the
+          build to the location.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Ready for a straight, lasting fence?</h2>
+        <p>Tell us your boundary, pool or gate and we&rsquo;ll come back with a clear written quote.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

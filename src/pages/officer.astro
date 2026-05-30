@@ -1,0 +1,128 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you install fencing in Officer?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — Officer is one of our busiest areas thanks to all the new building going on. We install Colorbond, timber and pool fencing plus gates and automation across the suburb's new estates, including brand-new boundary, side and rear fencing on thousands of lots." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does fencing cost in Officer in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a guide, Colorbond runs about $110–$170 per lineal metre and timber paling about $90–$140 per lineal metre supplied and installed. A 30-metre Colorbond rear boundary at $135 per metre is around $4,050, before old-fence removal or stepped panels for slope." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you fence a brand-new Officer build before handover?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We do a lot of new-build fencing in Officer — rear and side boundaries, and compliant pool barriers where pool-safety sign-off and Cardinia Shire barrier registration are needed. We can work in with your build timeline." }
+    },
+    {
+      "@type": "Question",
+      "name": "What fencing suits Officer's new estates?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Low-maintenance Colorbond is the runaway favourite on Officer's newer blocks because it handles our high-UV summers and clay-reactive soils with almost no upkeep and goes up fast. Glass pool fencing and matched automated gates are also popular here." }
+    }
+  ]
+};
+---
+<Layout
+  title="Fencing Officer | Colorbond, Pool & Timber Fences | Pakenham Fencing"
+  description="Fencing in Officer — Colorbond, timber, pool fencing & gates for new estate builds & established homes. Built to AS 1926.1. Free quotes — (03) 9003 0108."
+  canonical="https://pakenhamfencingco.com.au/officer/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero hero-suburb">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Officer, VIC 3809</span>
+      <h1>Fencing in <span class="accent">Officer</span>.</h1>
+      <p class="hero-sub">
+        Colorbond, timber and pool fencing plus gates and automation for
+        Officer&rsquo;s fast-growing estates &mdash; compliant, durable and built for
+        the way our corridor blocks behave.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Fencing the growth-corridor frontline.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          Officer sits right at the sharp end of the Cardinia growth corridor &mdash;
+          one of the busiest building suburbs in the shire, with new estates and new
+          homes going up constantly. With Cardinia adding roughly 255 new dwellings a
+          year and Pakenham East planned for more than 7,000 homes nearby, there is a
+          non-stop need for new boundary, side and rear fencing, compliant pool
+          barriers and tidy automated gates. We fence a lot of Officer.
+        </p>
+        <p>
+          On brand-new blocks the build matters as much as the materials.
+          Cardinia&rsquo;s clay-reactive soils move with the seasons, so posts go in
+          at the right depth in concrete to keep the run dead straight for the long
+          haul. Our high-UV summers fade under-spec timber, which is why
+          low-maintenance Colorbond dominates Officer&rsquo;s newer estates &mdash; it
+          goes up fast, never needs painting and shrugs off the heat. Where there is a
+          pool, we build the barrier to AS 1926.1 and register it with Cardinia Shire
+          so it passes the safety inspection a new build needs.
+        </p>
+        <p>
+          Every fence is built to the codes that apply &mdash; the Fences Act 1968
+          for shared boundaries, AS 1926.1 for pool barriers, VBA registration for
+          fencing over 2.1 metres or anything that retains, and Cardinia Shire
+          permits where height or corner-splay applies &mdash; so it stands straight
+          and gets signed off without drama.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Fencing services in Officer.</h3>
+        <p>
+          We install
+          <a href="/services/colorbond-fencing/">Colorbond fencing</a>,
+          <a href="/services/timber-paling-fencing/">timber paling fencing</a>,
+          <a href="/services/pool-safety-fencing/">pool safety fencing</a> to
+          AS 1926.1, and matched
+          <a href="/services/gates-automation/">gates &amp; automation</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other areas we fence.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+        <span class="area-pill area-pill-static">Nar Nar Goon</span>
+        <span class="area-pill area-pill-static">Pakenham Upper</span>
+        <span class="area-pill area-pill-static">Beaconsfield Upper</span>
+        <span class="area-pill area-pill-static">Gembrook</span>
+        <span class="area-pill area-pill-static">Maryknoll</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Officer fencing quote.</h2>
+        <p>New-build fencing specialists.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,142 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a Colorbond fence cost in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In 2026, Colorbond fencing across Cardinia typically runs about $110–$170 per lineal metre supplied and installed, depending on height, colour, ground slope and whether an old fence has to come out first. A standard 30-metre rear boundary at 1.8 metres high and $135 per metre works out to around $4,050. Stepped panels for a sloping Cardinia Lakes or Officer block, or rock in the post holes, can add to that, and we spell any of it out in your written quote." }
+    },
+    {
+      "@type": "Question",
+      "name": "What Colorbond colours can I choose?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You can pick from the full Colorbond steel colour range — popular boundary choices around Officer and Heritage Springs include Basalt, Monument, Woodland Grey, Jasper and Surfmist. We can also match an existing estate scheme so your new fence blends in with the street." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is Colorbond so popular in the Cardinia growth corridor?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Colorbond steel handles our high-UV summers and clay-reactive soils far better than timber, it does not rot, warp or need repainting, and it goes up fast. That low-maintenance, long-life combination is why it is the default boundary fence on newer estates right across Pakenham." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do Colorbond fences need a permit?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A standard dividing Colorbond fence up to 2.1 metres usually does not need a building permit, but anything taller than 2.1 metres, or a fence that also retains soil, brings in VBA registration and the NCC rules for building near boundaries. Cardinia Shire planning or building permits can also apply on height or corner-splay. We check your situation before quoting." }
+    }
+  ]
+};
+---
+<Layout
+  title="Colorbond Fencing Pakenham | Steel Boundary Fences | Pakenham Fencing"
+  description="Colorbond steel fencing in Pakenham & Cardinia — full colour range, low-maintenance, built for clay soils & high-UV summers. Free quotes — (03) 9003 0108."
+  canonical="https://pakenhamfencingco.com.au/services/colorbond-fencing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero hero-suburb">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Colorbond Fencing</span>
+      <h1>Colorbond fencing in <span class="accent">Pakenham</span>.</h1>
+      <p class="hero-sub">
+        Durable, low-maintenance steel boundary fencing in the full Colorbond
+        colour range &mdash; engineered for Cardinia&rsquo;s clay soils and built
+        to stand straight for decades across Pakenham and the growth corridor.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The default boundary fence for Cardinia estates.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          Walk through almost any newer estate in the Cardinia growth corridor
+          &mdash; Cardinia Lakes, Officer, Heritage Springs &mdash; and the
+          boundaries are overwhelmingly Colorbond. There is a good reason for that.
+          Steel handles our high-UV summers without fading or warping, it shrugs off
+          the wet and the heat, and it never needs repainting. For the thousands of
+          new homes going up here each year, it is simply the most sensible boundary
+          money can buy.
+        </p>
+        <p>
+          We build every Colorbond fence for the ground underneath it.
+          Cardinia&rsquo;s clay-reactive soils swell and shrink with the seasons, so
+          we set posts at the correct depth in concrete to stop the slow lean that
+          ruins a fence rushed in on shallow footings. On sloping blocks we step or
+          rake the panels cleanly so the top line stays sharp rather than following
+          every dip in the ground. The result is a fence that still looks straight
+          in ten years.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Colours, heights and what it costs.</h3>
+        <p>
+          You choose from the complete Colorbond steel range &mdash; Monument,
+          Basalt, Woodland Grey, Jasper, Surfmist and the rest &mdash; and we can
+          match an existing estate scheme. Standard heights run from 1.5 to 1.8
+          metres, with taller screening available. As a 2026 guide, Colorbond runs
+          about $110&ndash;$170 per lineal metre supplied and installed. A worked
+          example: a 30-metre rear boundary at 1.8 metres and $135 per metre is
+          roughly $4,050, before any allowance for old-fence removal, rock or
+          stepped panels.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Done to the right codes.</h3>
+        <p>
+          A standard dividing fence up to 2.1 metres generally does not need a
+          building permit. Go taller than 2.1 metres, or build a fence that also
+          retains soil, and VBA registration plus the NCC rules for building near
+          boundaries come into play, alongside any Cardinia Shire planning or
+          building permit on height or corner-splay. Shared boundaries are covered
+          by the Fences Act 1968, and we Dial Before You Dig before the post holes go
+          in. We confirm exactly what applies before we quote.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Related fencing &amp; areas.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          Prefer the look of timber? Compare our
+          <a href="/services/timber-paling-fencing/">timber paling fencing</a>, or
+          if you have a pool to enclose see
+          <a href="/services/pool-safety-fencing/">pool safety fencing</a> built to
+          AS 1926.1. We install Colorbond right across
+          <a href="/cardinia-lakes/">Cardinia Lakes</a> and
+          <a href="/officer/">Officer</a> &mdash; or browse the whole
+          <a href="/cardinia-shire/">Cardinia Shire</a> service area.
+        </p>
+      </div>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get your Colorbond quote.</h2>
+        <p>Send us your boundary length and we&rsquo;ll come back with a clear, written price.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

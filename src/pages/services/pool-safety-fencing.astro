@@ -1,0 +1,138 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does pool fencing cost in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "In 2026, frameless and semi-frameless glass pool fencing across Cardinia typically runs about $300–$550 per lineal metre supplied and installed, while aluminium pool fencing is more affordable at roughly $130–$220 per lineal metre. A worked example: a 20-metre glass pool surround at $400 per metre is about $8,000, with self-closing gates and spigots included in the quote." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my pool fence have to comply with AS 1926.1?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every pool and spa barrier in Victoria must comply with AS 1926.1 and the Victorian pool-barrier regulations. That means a minimum 1.2-metre barrier, the non-climbable zone kept clear, no gaps a small child could pass through, and a self-closing, self-latching gate that opens away from the pool. We build to AS 1926.1 and Cardinia Shire barrier registration so your barrier passes inspection." }
+    },
+    {
+      "@type": "Question",
+      "name": "Glass or aluminium for a pool fence?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Frameless and semi-frameless glass gives an uninterrupted view of the pool and the yard and suits modern estate homes around Cardinia Lakes and Officer. Aluminium is the value choice, still fully compliant, and powder-coated to handle our UV. Both meet AS 1926.1 when installed correctly." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do new builds in the Cardinia corridor need pool fencing before handover?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Pool-safety compliance and Cardinia Shire barrier registration are required, and a non-compliant barrier will hold things up. With thousands of new homes going in across Pakenham each year, we see a lot of this — we install the compliant barrier and gates so the pool can be signed off." }
+    }
+  ]
+};
+---
+<Layout
+  title="Pool Safety Fencing Pakenham | AS 1926.1 Glass & Aluminium | Pakenham Fencing"
+  description="Compliant pool fencing in Pakenham & Cardinia — glass & aluminium barriers built to AS 1926.1 & Victorian pool-barrier regulations. Free quotes — (03) 9003 0108."
+  canonical="https://pakenhamfencingco.com.au/services/pool-safety-fencing/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero hero-suburb">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Pool Safety Fencing</span>
+      <h1>Pool safety fencing in <span class="accent">Pakenham</span>.</h1>
+      <p class="hero-sub">
+        Glass and aluminium pool barriers built to AS 1926.1 and the Victorian
+        pool-barrier regulations &mdash; safe, compliant and good-looking barriers
+        for homes across Pakenham and the Cardinia growth corridor.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Compliant pool barriers, done properly.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          A pool fence is the one part of your property where the rules are not
+          negotiable. Every pool and spa barrier in Victoria has to comply with
+          AS 1926.1 and the Victorian pool-barrier regulations &mdash; the
+          four-sided isolation principle, a minimum 1.2-metre barrier, the
+          non-climbable zone kept clear, no foot or hand holds, and a self-closing,
+          self-latching gate that swings away from the water. We build to that
+          standard every time, and register the barrier with Cardinia Shire, so it
+          passes inspection the first time rather than the second.
+        </p>
+        <p>
+          With pool-safety compliance required across the board, and thousands of new
+          homes going up across the Cardinia growth corridor each year, we install a
+          lot of barriers for brand-new pools around Cardinia Lakes, Officer and
+          Heritage Springs &mdash; as well as upgrades for older pools that no longer
+          meet the current standard. Either way you get a barrier that is safe,
+          signed off and built to last in our climate.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Glass, aluminium and what it costs.</h3>
+        <p>
+          Frameless and semi-frameless glass gives a clean, uninterrupted view and
+          suits modern homes; aluminium is the value option and just as compliant,
+          powder-coated to handle our high-UV summers. As a 2026 guide, glass pool
+          fencing runs about $300&ndash;$550 per lineal metre and aluminium about
+          $130&ndash;$220 per lineal metre, supplied and installed. A worked example:
+          a 20-metre glass surround at $400 per metre is roughly $8,000, gates and
+          spigots included.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Registration and the rules that apply.</h3>
+        <p>
+          Beyond AS 1926.1, pool and spa barriers in Victoria fall under the Building
+          Regulations 2018 and must be registered with Cardinia Shire, with periodic
+          compliance inspections. We build, certify-ready and register the barrier so
+          you are not left chasing paperwork after the pool is full.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Related fencing &amp; areas.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          Need the rest of your yard enclosed too? See
+          <a href="/services/colorbond-fencing/">Colorbond fencing</a> for the
+          perimeter, or a matching
+          <a href="/services/gates-automation/">gate</a> for the entrance. We install
+          compliant pool fencing across
+          <a href="/cardinia-lakes/">Cardinia Lakes</a> and
+          <a href="/officer/">Officer</a> &mdash; and the wider
+          <a href="/cardinia-shire/">Cardinia Shire</a> region.
+        </p>
+      </div>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Get your pool fencing quote.</h2>
+        <p>Send us your pool dimensions and we&rsquo;ll come back with a compliant, written price.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

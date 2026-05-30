@@ -1,0 +1,129 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you install fencing in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — we cover Beaconsfield and Beaconsfield Upper. We install Colorbond, timber and pool fencing plus gates and automation, from suburban boundaries to larger lifestyle and acreage blocks with rural post-and-rail and premium feature fencing." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does fencing cost in Beaconsfield in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a guide, Colorbond runs about $110–$170 per lineal metre and timber paling about $90–$140 per lineal metre supplied and installed. A 30-metre timber rear boundary at $110 per metre is around $3,300, before old-fence removal or capping upgrades." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you fence a larger Beaconsfield Upper block?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Many Beaconsfield Upper properties are larger lifestyle and acreage lots, so we combine presentable house-yard fencing with post-and-rail or wire on the boundaries, engineered for the exposed wind those elevated blocks catch — and we fit automated driveway gates to match." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you match new fencing to established Beaconsfield streets?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Beaconsfield has plenty of established streetscapes, so when we replace a run we match the neighbour's height, profile and capping so the street stays consistent. Shared dividing fences fall under the Fences Act 1968." }
+    }
+  ]
+};
+---
+<Layout
+  title="Fencing Beaconsfield | Colorbond, Timber & Rural Fences | Pakenham Fencing"
+  description="Fencing in Beaconsfield & Beaconsfield Upper — Colorbond, timber, pool & rural fencing plus gates, built for suburban & lifestyle blocks. (03) 9003 0108."
+  canonical="https://pakenhamfencingco.com.au/beaconsfield/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero hero-suburb">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Beaconsfield, VIC 3807</span>
+      <h1>Fencing in <span class="accent">Beaconsfield</span>.</h1>
+      <p class="hero-sub">
+        Colorbond, timber, pool and rural fencing plus gates and automation across
+        Beaconsfield and Beaconsfield Upper &mdash; from suburban boundaries to
+        elevated lifestyle and acreage blocks.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Suburban and lifestyle fencing in Beaconsfield.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          Beaconsfield sits at the western edge of the Cardinia growth corridor and
+          gives us a real mix of work &mdash; established suburban streets down in
+          Beaconsfield itself, and larger, elevated lifestyle and acreage lots up in
+          Beaconsfield Upper. That means we cover both ends of the trade here: tidy
+          Colorbond and timber boundaries for house yards, and post-and-rail or wire
+          fencing engineered for acreage, with automated gates to match.
+        </p>
+        <p>
+          We build for the local ground and weather. Cardinia&rsquo;s clay-reactive
+          soils move through the seasons, so posts go in at the right depth in
+          concrete to stop the lean. Our high-UV summers fade under-spec timber, so
+          we cap and treat properly and offer low-maintenance Colorbond as the
+          easy-care option. Up in Beaconsfield Upper the elevated blocks catch more
+          wind, so on rural boundaries we use closer post spacings, deeper footings
+          and braced strainer assemblies to keep the run tight. On established streets
+          we match the neighbouring fences so the streetscape stays consistent.
+        </p>
+        <p>
+          Every job is built to the codes that matter &mdash; the Fences Act 1968 for
+          shared boundaries, AS 1926.1 for pool barriers, VBA registration for
+          fencing over 2.1 metres or anything that retains, and Cardinia Shire permits
+          where height or corner-splay applies &mdash; so it stands straight and
+          passes inspection.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Fencing services in Beaconsfield.</h3>
+        <p>
+          We offer
+          <a href="/services/colorbond-fencing/">Colorbond fencing</a>,
+          <a href="/services/timber-paling-fencing/">timber paling fencing</a>,
+          <a href="/services/pool-safety-fencing/">pool safety fencing</a>,
+          <a href="/services/rural-acreage-fencing/">rural &amp; acreage fencing</a>
+          for the bigger blocks, and
+          <a href="/services/gates-automation/">gates &amp; automation</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other areas we fence.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+        <span class="area-pill area-pill-static">Nar Nar Goon</span>
+        <span class="area-pill area-pill-static">Pakenham Upper</span>
+        <span class="area-pill area-pill-static">Beaconsfield Upper</span>
+        <span class="area-pill area-pill-static">Gembrook</span>
+        <span class="area-pill area-pill-static">Maryknoll</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Beaconsfield fencing quote.</h2>
+        <p>Suburban and acreage fencing specialists.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

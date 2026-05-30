@@ -1,0 +1,129 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you install fencing in Cardinia Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — Cardinia Lakes is one of our core areas. We install Colorbond, timber and pool fencing plus gates and automation right across the estate, and we know how the local blocks and clay soils behave." }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a fence cost in Cardinia Lakes in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "As a guide, Colorbond runs about $110–$170 per lineal metre and timber paling about $90–$140 per lineal metre supplied and installed. A typical 30-metre Colorbond rear boundary at $135 per metre works out to around $4,050, before old-fence removal or stepped panels for slope." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is Colorbond so common in Cardinia Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The estate's newer homes and our high-UV summers and clay-reactive soils make low-maintenance Colorbond the practical choice, which is why most boundaries here are steel. It never needs painting and stands straight when the posts are set properly." }
+    },
+    {
+      "@type": "Question",
+      "name": "Who pays for a shared fence in Cardinia Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Under the Fences Act 1968 (VIC), the cost of a sufficient dividing fence is generally shared between neighbours once the right notices are served. A lot of our Cardinia Lakes work is shared-fence replacement, and we supply the quote you hand to your neighbour." }
+    }
+  ]
+};
+---
+<Layout
+  title="Fencing Cardinia Lakes | Colorbond, Timber & Pool | Pakenham Fencing"
+  description="Fencing in Cardinia Lakes — Colorbond, timber, pool fencing & gates built for the estate's soils & climate. Free quotes — (03) 9003 0108."
+  canonical="https://pakenhamfencingco.com.au/cardinia-lakes/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero hero-suburb">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Cardinia Lakes, VIC 3810</span>
+      <h1>Fencing in <span class="accent">Cardinia Lakes</span>.</h1>
+      <p class="hero-sub">
+        Colorbond, timber and pool fencing plus gates and automation for homes
+        across Cardinia Lakes &mdash; built for the estate&rsquo;s clay soils and our
+        high-UV summers.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>A local fencer who knows the estate.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          Cardinia Lakes is one of the established faces of the Pakenham growth
+          corridor &mdash; a big, family-oriented estate where the original
+          early-2000s boundaries are now reaching the age where they sag, grey and
+          need replacing. We work here constantly, so we know how the blocks step,
+          how the clay behaves and what the streets expect a fence to look like.
+        </p>
+        <p>
+          That local knowledge shows up in the build. Cardinia&rsquo;s clay-reactive
+          soils swell and shrink with the seasons, so we set posts at the right depth
+          in concrete to stop the lean that ruins a rushed fence. Our high-UV summers
+          fade and warp under-spec timber, which is why most Cardinia Lakes
+          homeowners choose low-maintenance Colorbond &mdash; though a well-built,
+          capped timber paling fence still looks superb here. On sloping blocks we
+          step the panels cleanly so the top line stays sharp.
+        </p>
+        <p>
+          Whatever you need, we work to the codes that matter &mdash; the Fences Act
+          1968 for shared boundaries, AS 1926.1 for pool barriers, VBA registration
+          for fencing over 2.1 metres or anything that retains, and Cardinia Shire
+          permits where height or corner-splay applies &mdash; so your fence stands
+          straight and passes inspection. Popular jobs in Cardinia Lakes include
+          Colorbond rear boundaries, compliant glass pool fences and matched
+          automated driveway gates.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Fencing services in Cardinia Lakes.</h3>
+        <p>
+          We offer the full range here:
+          <a href="/services/colorbond-fencing/">Colorbond fencing</a>,
+          <a href="/services/timber-paling-fencing/">timber paling fencing</a>,
+          <a href="/services/pool-safety-fencing/">pool safety fencing</a>,
+          <a href="/services/rural-acreage-fencing/">rural &amp; acreage fencing</a>
+          on the larger blocks, and
+          <a href="/services/gates-automation/">gates &amp; automation</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Other areas we fence.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/lakeside/">Lakeside</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+        <span class="area-pill area-pill-static">Nar Nar Goon</span>
+        <span class="area-pill area-pill-static">Pakenham Upper</span>
+        <span class="area-pill area-pill-static">Beaconsfield Upper</span>
+        <span class="area-pill area-pill-static">Gembrook</span>
+        <span class="area-pill area-pill-static">Maryknoll</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free Cardinia Lakes fencing quote.</h2>
+        <p>Local fencers who know the estate.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
