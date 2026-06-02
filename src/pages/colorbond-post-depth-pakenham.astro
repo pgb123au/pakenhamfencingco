@@ -1,0 +1,210 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is 600mm post depth enough for Colorbond in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "On a sheltered urban infill block in central Pakenham, 600mm with 200mm of N20 concrete around a 65mm steel post can be adequate for a 1.8m Colorbond run. On the exposed-paddock estates — Cardinia Lakes, Heritage Springs, the Officer fringe — 600mm is not enough. AS 4055 wind classification on those sites is typically N3, occasionally N4. We go to 750mm depth as a minimum and 900mm where the run sits broadside to the prevailing south-westerly. We would rather over-engineer the footing than rebuild the fence in three years." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a 30m Colorbond fence take to install in Pakenham?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A straight 30m run on a level Pakenham block with no obstacles is a one-day install — two tradies, augered post holes, concrete poured, posts plumbed and braced, panels and capping fitted, site cleaned. We come back day 2 to remove props once the concrete has set. On heavy clay near Officer the auger work is slower and we often allow 1.5 days. On a stepped run with corners and a gate it is 2 days. We quote the day count up front so the customer is not surprised when we book the calendar." }
+    },
+    {
+      "@type": "Question",
+      "name": "What wind classification applies to Cardinia Lakes and Heritage Springs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Under AS 4055 most of the Cardinia Lakes and Heritage Springs estates fall into N3 — non-cyclonic, 50m/s peak gust design wind speed. Some exposed fringe blocks rate N4. The wind classification on your soil report or engineering drawings is the document we ask for. If you do not have one we default to N3 in Cardinia Lakes and N3 on the northern edge of Heritage Springs. That sets the post centres (we go to 2.4m max), the post depth (750mm), and the panel-rail spacing for the design." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does heavy clay near Officer change the auger choice?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The reactive clay belt that runs through Officer and the southern edge of Pakenham swells when wet and shrinks when dry — the same behaviour that requires AS 2870 footings on house slabs. A standard hand-auger struggles in dry summer clay and a normal earth auger glazes the hole walls when the clay is wet, which kills concrete-to-clay bond. We bring a hydraulic post-hole borer with a clay-cutting head and we slightly under-size the hole then chip the walls to give the concrete a key. On heavy-clay sites we also let the holes sit open for 30 minutes to off-gas before pouring." }
+    }
+  ]
+};
+---
+<Layout
+  title="Colorbond Post Depth in Pakenham | AS 4055 Wind Load on Exposed Paddock Blocks | Pakenham Fencing"
+  description="Why 600mm posts fail on Cardinia Lakes & Heritage Springs blocks. AS 4055 wind load, 750mm depth standard, heavy-clay auger choice near Officer. Free quote — (03) 9003 0108."
+  canonical="https://pakenhamfencingco.com.au/colorbond-post-depth-pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero hero-suburb">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Colorbond Install &middot; Pakenham</span>
+      <h1>Colorbond post depth on <span class="accent">Pakenham exposed-paddock</span> blocks.</h1>
+      <p class="hero-sub">
+        Why 600mm does not cut it on Cardinia Lakes and Heritage Springs estates,
+        what AS 4055 wind loading actually prescribes, and how the auger choice
+        changes the day you hit heavy clay near Officer.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The 600mm myth and why we walked away from it.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          For a long time the residential fencing industry treated 600mm as a
+          default post depth. Six hundred millimetres of post in the ground,
+          200mm of concrete around it, every fence ever. That number came out
+          of established suburbs &mdash; Hawthorn, Camberwell, Mt Waverley
+          &mdash; where the surrounding houses, garages and mature trees act
+          as a wind shelter. It works there. It does not work in Pakenham,
+          and it really does not work in the new growth corridor running
+          through Cardinia Lakes, Heritage Springs and the Officer paddock
+          estates. We learned that the slow way, going back to fences we had
+          installed at 600mm three years earlier and finding them leaning 8
+          degrees off plumb after a couple of August storms.
+        </p>
+        <p>
+          The technical reason is in <strong>AS 4055 &mdash; Wind loads for
+          housing</strong>. AS 4055 classifies sites into wind regions and
+          terrain categories, then assigns a wind classification from N1
+          (sheltered, low design wind speed) up through N4 (most exposed in
+          non-cyclonic Australia). A central Pakenham infill block in a
+          1990s estate is typically N2 &mdash; sheltered by mature houses
+          and trees. A new Cardinia Lakes block facing open paddock to the
+          south-west is N3, sometimes N4 on the exposed fringe. The design
+          wind speed jumps from 40m/s peak gust at N2 to 50m/s at N3 to
+          61m/s at N4. The load on a 1.8m Colorbond panel scales with the
+          square of the wind speed. Doubling the wind speed quadruples the
+          load on the post. Six hundred millimetres of footing, designed for
+          N2, simply does not hold N3 or N4.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Our standard: 750mm to 900mm on the exposed-paddock estates.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          On any new install in Cardinia Lakes, Heritage Springs, Lakeside
+          fringe blocks, or the rural side of Beaconsfield, we go to
+          <strong>750mm depth as a minimum</strong>. That is the post sitting
+          750mm into the ground with 250mm of N20 concrete encasing it. On
+          runs that face the prevailing south-westerly broadside &mdash;
+          which on a paddock block typically means the back fence &mdash; we
+          go to <strong>900mm</strong>. We also pull the post centres in from
+          2.6m to 2.4m maximum. A shorter span means less leverage on each
+          post under load. We are happy to talk a homeowner through why the
+          extra concrete cost is worth it. Roughly $40-60 per post in
+          materials, and maybe 30 minutes of additional auger time per
+          post. Over a 30m fence that is $400-600 extra. The cost of
+          rebuilding a leaning fence three years later is $4,000-6,000.
+        </p>
+        <p>
+          On a typical 1.8m Colorbond install we spec: 65mm steel posts at
+          2.4m centres, 750mm depth, 250mm concrete plug, N20 mix, top and
+          bottom rails screwed not riveted, sheets installed with capping
+          immediately to lock in the geometry. For 2.0m fences (the maximum
+          height before a planning permit is typically required in Cardinia
+          Shire) we go to 80mm posts at 2.2m centres and 900mm depth. The
+          permit threshold is a useful sanity check &mdash; if a fence needs
+          a planning permit it almost certainly needs the deeper footing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Heavy clay near Officer: the auger changes everything.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          The reactive clay belt that runs through Officer and the southern
+          edge of Pakenham is the same geology that drives the AS 2870
+          footing requirements on every new house slab in the area. From a
+          fencing perspective, that clay does two things. In dry summer it
+          sets like concrete &mdash; a 250mm hand-auger barely makes
+          progress. In wet winter it turns into a sticky plastic mass and
+          the auger walls glaze over, which prevents the concrete plug from
+          bonding to the surrounding soil. We bring a hydraulic post-hole
+          borer with a clay-cutting head for any job south of Princes
+          Highway. Cost of running the borer goes into the quote &mdash; we
+          do not hide it.
+        </p>
+        <p>
+          There are two install-day adjustments we make on heavy clay. First,
+          we slightly under-size the bore relative to the post diameter,
+          then chip the walls with the auger to give the concrete a
+          mechanical key to grip on. A smooth-walled hole in clay slips
+          under load even with the right concrete mix. Second, we let the
+          freshly augered hole sit open for 30 minutes before pouring &mdash;
+          this allows trapped air and moisture to escape, so the concrete
+          plug does not develop voids during set. On a 30m run those two
+          changes add about 90 minutes to the install day. The fence still
+          gets done in 1.5 days. The difference shows up at year five when
+          neighbouring jobs have started to move and ours have not. We are
+          not interested in fencing that looks great at handover and shifts
+          quietly afterwards.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Frequently asked: Colorbond install depth in Pakenham.</h2>
+      <div style="max-width: 60rem;">
+        <h3>Is 600mm post depth enough for Colorbond in Pakenham?</h3>
+        <p>
+          On a sheltered central Pakenham infill block, possibly. On the
+          exposed-paddock estates near Officer, Cardinia Lakes and Heritage
+          Springs, no. We go to 750mm as standard and 900mm where the run
+          faces the prevailing south-westerly broadside.
+        </p>
+        <h3>How long does a 30m Colorbond fence take to install in Pakenham?</h3>
+        <p>
+          One day on a flat, obstacle-free site. 1.5 days on heavy clay near
+          Officer because the auger work is slower. 2 days on a stepped run
+          with corners and gates. We quote the day count up front.
+        </p>
+        <h3>What wind classification applies to Cardinia Lakes and Heritage Springs?</h3>
+        <p>
+          Most blocks are N3 under AS 4055, with some exposed fringe blocks at
+          N4. That sets the post depth, post centres, and panel spacing.
+          Bring your soil report or we default to N3 in those estates.
+        </p>
+        <h3>Why does heavy clay near Officer change the auger choice?</h3>
+        <p>
+          The reactive clay either sets like rock when dry or glazes over the
+          hole walls when wet. We use a hydraulic borer with a clay-cutting
+          head, slightly under-size the bore and chip the walls for
+          concrete key, then let the hole air for 30 minutes before pouring.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Building on a paddock block? Get a quote that names the post depth.</h2>
+      <p style="max-width: 50rem; margin: 1rem auto 2rem;">
+        Our written quotes always state the post depth, post centres, and
+        AS 4055 wind classification we are building to. If another quote
+        does not name those numbers, ask why. Call
+        <strong>(03) 9003 0108</strong> or email
+        <strong>quotes@pakenhamfencingco.com.au</strong>.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+</Layout>

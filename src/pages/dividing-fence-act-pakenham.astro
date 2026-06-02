@@ -1,0 +1,214 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does my Pakenham neighbour have to pay half of the new dividing fence?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Under the Fences Act 1968 (Vic), the default position is a 50-50 cost-share between adjoining owners for a 'sufficient' dividing fence. That means the cost of a standard residential fence built to a reasonable, not premium, specification. If you want a higher-spec fence (taller, Colorbond instead of paling, automated gate) you may need to pay the difference yourself. The neighbour is only liable for their fair share of the sufficient fence, not the upgrade." }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if my Pakenham neighbour ignores the fencing notice?",
+      "acceptedAnswer": { "@type": "Answer", "text": "If you serve a Fencing Notice under the Fences Act 1968 (Vic) and the neighbour does not respond within 30 days, you can proceed with the work and recover their share through the Magistrates' Court. In practice we strongly recommend the Dispute Settlement Centre of Victoria (DSCV) free mediation first — it resolves most Pakenham boundary disputes in a single phone session and saves the court filing fee. Keep written records of every notice and quote." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I just build the fence and bill the neighbour later?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No — and we will not quote it that way. The Fences Act 1968 (Vic) requires a written Fencing Notice with the proposed line, materials, contractor and cost estimate before work starts. If you skip the notice and just build, the neighbour has no legal obligation to contribute and can dispute the line of the fence. We always advise clients to issue the notice, give the 30-day period, then book the install. We hold quoted prices for 60 days to accommodate the process." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my Pakenham neighbour wants a cheaper fence than I do?",
+      "acceptedAnswer": { "@type": "Answer", "text": "This is the most common dispute we see in Pakenham and Officer. The Fences Act 1968 (Vic) entitles each owner to a 'sufficient' fence at 50-50 cost. If you want better, you pay the upgrade differential. We quote two prices on the same drawing — the sufficient-fence figure and the upgrade figure — so the cost-share conversation is transparent. The neighbour pays half of the lower number; you pay half of the lower number plus the full upgrade." }
+    }
+  ]
+};
+---
+<Layout
+  title="Dividing Fence Cost-Share in Pakenham | Fences Act 1968 (Vic) Notices | Pakenham Fencing"
+  description="How dividing fence cost-share works in Pakenham under the Fences Act 1968 (Vic). Fencing Notice template, 30-day rule, mediation path. Free quote — (03) 9003 0108."
+  canonical="https://pakenhamfencingco.com.au/dividing-fence-act-pakenham/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero hero-suburb">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Boundary Fences &middot; Pakenham</span>
+      <h1>Dividing fence cost-share in <span class="accent">Pakenham</span>.</h1>
+      <p class="hero-sub">
+        Fences Act 1968 (Vic) sets a 50-50 default on a sufficient dividing fence.
+        Here is how the notice works, what to do if the neighbour does not reply,
+        and the Cardinia mediation path before you ever see a court.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>The legal default in Victoria: 50-50 on a sufficient fence.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          The dividing fence between two homes in Pakenham &mdash; whether you are
+          backing onto a Cardinia Lakes courtyard block or a half-acre on the
+          Officer fringe &mdash; is governed by the <strong>Fences Act 1968 (Vic)</strong>.
+          The Act is older than most of the suburbs it now covers, but the
+          framework is simple. Two adjoining owners share the cost of a
+          &ldquo;sufficient&rdquo; dividing fence on a 50-50 basis. Either party
+          can initiate the build by serving a <strong>Fencing Notice</strong> in
+          writing. The other party has <strong>30 days</strong> to respond,
+          either agreeing, negotiating the spec, or proposing a different
+          contractor. If no response lands within 30 days, the initiating owner
+          can proceed and recover the neighbour&rsquo;s share later.
+        </p>
+        <p>
+          The word that does the heavy lifting is <em>sufficient</em>. The Act
+          does not say a Colorbond panel fence with capping is sufficient; it
+          does not say a 1.8m timber paling fence is sufficient. What
+          sufficient means is whatever a reasonable person, looking at the two
+          properties and the local standard, would consider appropriate. In
+          practice, in Pakenham, the 2026 sufficient-fence benchmark for a
+          residential boundary is a <strong>1.8m treated-pine paling fence</strong>
+          with three rails and capping, or an equivalent Colorbond panel run.
+          That is what most of our neighbour-to-neighbour cost-share quotes
+          land on. If you want frameless glass, automated gates, or a 2.4m
+          slat screen for privacy &mdash; that is your upgrade, and the cost
+          differential is yours alone.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>How to serve a Fencing Notice on a Pakenham neighbour.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          The Notice itself is not a legal document drafted by a solicitor. It
+          is a one-page letter in plain English. It must include: the proposed
+          fence line, the proposed materials and height, the proposed
+          contractor (with a written quote attached), the proposed start date,
+          and a request that the neighbour respond within 30 days. We
+          routinely email clients a template Notice with the quote already
+          attached. The Notice can be posted, hand-delivered, or sent by
+          email if the email is the neighbour&rsquo;s confirmed contact
+          address.
+        </p>
+        <p>
+          What you do not need: a surveyor (unless the boundary itself is in
+          dispute), a planning permit (most residential boundary fences do not
+          require one if under 2.0m), or council sign-off. What you do need
+          before booking the install: the 30-day period to elapse, a clear
+          written record of the Notice being served, and either the
+          neighbour&rsquo;s written agreement, their silence past day 30, or a
+          DSCV mediation outcome. We hold our quoted prices for 60 days
+          specifically to accommodate this timeline. Customers who try to
+          skip the Notice almost always end up in a dispute three months
+          later when the bill arrives.
+        </p>
+        <p>
+          A practical note: if the boundary trees need to come out before the
+          fence goes in, that falls under the <strong>Cardinia Shire Tree
+          Protection Local Law</strong>. We do not book a fence install over a
+          line that still has a protected tree on the boundary. Trees over the
+          trigger trunk diameter need a Council permit to remove, and the
+          decision on cost-share for tree removal is separate from the
+          Fences Act cost-share for the fence itself.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>When the neighbour pushes back: the Cardinia mediation path.</h2>
+      <div style="max-width: 60rem;">
+        <p>
+          About one in four of our Pakenham boundary jobs hits a disagreement.
+          Usually it is on materials (they want paling, you want Colorbond) or
+          height (they want 1.5m, you want 2.0m). Sometimes it is on the line
+          itself &mdash; one neighbour believes the existing fence is 200mm
+          inside their title. The legal forum for these disputes is the
+          Magistrates&rsquo; Court, but in practice the <strong>Dispute
+          Settlement Centre of Victoria</strong> handles these well before they
+          ever go that far. DSCV is free, runs by phone, and most
+          dividing-fence sessions are resolved in 60 minutes. We give every
+          Pakenham client the DSCV contact details with their quote.
+        </p>
+        <p>
+          If mediation fails and the dispute does reach the Magistrates&rsquo;
+          Court, the magistrate has wide discretion under the Act to determine
+          what is sufficient, who pays what proportion, and where the line
+          sits. In the cases we have been adjacent to, the magistrate
+          generally lands on the sufficient-fence benchmark for the local
+          area &mdash; which in Pakenham, again, is the 1.8m paling or
+          Colorbond. The court process adds 3-6 months and filing fees, which
+          is why we steer everyone to mediation first.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Frequently asked: dividing fences in Pakenham.</h2>
+      <div style="max-width: 60rem;">
+        <h3>Does my Pakenham neighbour have to pay half of the new dividing fence?</h3>
+        <p>
+          Under the Fences Act 1968 (Vic), the default is 50-50 cost-share for
+          a sufficient dividing fence. If you want a premium spec, you pay the
+          upgrade differential. The neighbour is liable for their share of the
+          sufficient fence only, not the upgrade you chose.
+        </p>
+        <h3>What happens if my Pakenham neighbour ignores the fencing notice?</h3>
+        <p>
+          After 30 days of silence following a properly served Fencing Notice,
+          you can proceed with the work and recover their share through the
+          Magistrates&rsquo; Court. We strongly recommend Dispute Settlement
+          Centre of Victoria free mediation as the first step &mdash; it
+          resolves most disputes in one phone session.
+        </p>
+        <h3>Can I just build the fence and bill the neighbour later?</h3>
+        <p>
+          No. The Fences Act 1968 (Vic) requires a written Notice before work
+          starts, with the proposed line, materials, contractor and cost.
+          Skipping the Notice means the neighbour has no legal obligation to
+          contribute. We always advise: issue the Notice, wait the 30 days,
+          then book the install.
+        </p>
+        <h3>What if my Pakenham neighbour wants a cheaper fence than I do?</h3>
+        <p>
+          We quote two prices on the same drawing &mdash; the sufficient-fence
+          figure and the upgrade figure. The neighbour pays half of the lower
+          number. You pay half of the lower number plus the full upgrade
+          differential. That keeps the conversation transparent and stops it
+          becoming a dispute about value.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="section-inner" style="text-align: center;">
+      <h2>Need a Fencing Notice and a quote your neighbour will agree to?</h2>
+      <p style="max-width: 50rem; margin: 1rem auto 2rem;">
+        We will measure the boundary, draft the Notice template, and quote both
+        the sufficient-fence and upgrade prices so the cost-share conversation
+        is clean. Call <strong>(03) 9003 0108</strong> or email
+        <strong>quotes@pakenhamfencingco.com.au</strong>.
+      </p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a free quote</a>
+      </div>
+    </div>
+  </section>
+</Layout>
